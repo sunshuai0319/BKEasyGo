@@ -1,0 +1,100 @@
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+
+    <title>易购——goods_detail_add</title>
+    <meta charset="utf-8">
+    <link type="text/css" href="css/goods_detail_add.css" rel="stylesheet">
+    <!--<script type="text/javascript" src="js/jquery-1.11.0.js"></script>-->
+</head>
+<body>
+<main>
+   
+        <section class="right">
+            <section class="right_top">
+                <ul>
+                    <li><img src="images/houtai1.png"></li>
+                    <li><span>添加商品详细信息</span></li>
+                </ul>
+            </section>
+            <div class="line"></div>
+            <section class="right_middle">
+            <form action="goodsAddTo" method="post" enctype="multipart/form-data"> 
+                <table>
+                <tr>
+                	 	<td class="text"></td>
+                        <td></td>
+                    	<td></td>
+                    </tr>
+                    <tr>
+                        <td class="text">商品名称：</td>
+                        <td><input type="text" class="GG" name="name"></td>
+                    	<td id="resultName"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">所属分类：</td>
+                        <td >大分类<select name="bigClass" id="bigClass" >
+                       		 <option value=-1>请选择</option>
+                        	
+                            <option value="33">玩具</option>
+                            
+                            <option value="31">珠宝首饰</option>
+                            
+                            <option value="30">运动户外</option>
+                            
+                            <option value="29">居家生活</option>
+                            
+                            <option value="28">家居家纺</option>
+                            
+                            <option value="27">体育用品</option>
+                            
+                            <option value="26">蔬菜</option>
+                            
+                            <option value="25">服装</option>
+                            
+                            <option value="24">装饰材料</option>
+                            
+                            <option value="23">汽车用品</option>
+                            
+                            <option value="21">日用品</option>
+                            
+                            <option value="19">手机</option>
+                            
+                            <option value="18">书籍</option>
+                            
+                            <option value="17">电器</option>
+                            
+                        </select>小分类<select name="smallClass" id="smallClass">
+                       		 <option value=-1>请选择</option>
+                        </select>
+                        
+                        </td>
+                        <td id="resultSmallClass"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">价格：</td>
+                        <td><input type="text" class="GG" name="price"></td>
+                    	<td id="resultPrice"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">剩余数量：</td>
+                        <td><input type="text" class="GG" name="surplus"></td>
+                   		<td id="resultSurplus"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">图片：</td>
+                        <td><input type="file" id="file" name="file"><span id="resultFile"></span></td>
+                    </tr>
+                    <tr><td></td><td colspan="2" class="right_bottom"><input type="image" id="submit" src="images/submit.gif"></td></tr>
+                </table>
+               </form> 
+            </section>
+        </section>
+
+</main>
+</body>
+</html>

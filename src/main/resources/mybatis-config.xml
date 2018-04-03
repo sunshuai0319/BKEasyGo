@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+
+<!-- mybatis设置文件 -->
+<configuration>
+    <!-- 全局配置-->
+    <settings>
+        <!-- 开启主键自增 -->
+        <setting name="useGeneratedKeys" value="true"/>
+
+        <!-- 别名替换列明-->
+        <!--<setting name="useColumnLabel" value="true"/>-->
+        <!-- 驼峰命名 -->
+        <!--<setting name="mapUnderscoreToCamelCase" value="true"/>-->
+
+    </settings>
+</configuration>

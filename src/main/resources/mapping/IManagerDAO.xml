@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<!-- 映射文件 -->
+<mapper namespace="com.lechenggu.bkeasygo.dao.IManagerDAO">
+
+    <!-- 查询manager表的所有内容 -->
+    <select id="findByNameAndPass"  resultType="com.lechenggu.bkeasygo.model.Manager">
+        SELECT * FROM manager
+    </select>
+
+
+</mapper>

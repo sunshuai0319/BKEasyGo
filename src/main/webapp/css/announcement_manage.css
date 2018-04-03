@@ -1,0 +1,83 @@
+*{
+     padding: 0px;
+     margin: 0 auto;
+     	font-size: 12px;
+ }
+
+main .right_top {
+    height: 40px;
+    width: 500px;
+    float:left;
+    margin-left:20px;
+}
+main .right_top ul {
+    list-style: none;
+}
+main .right_top li {
+    float: left;
+}
+main .right_top span{
+    font-weight: bold;
+    font-size: 12px;
+}
+main .goodsno{
+    font-size: 12px;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+main .line {
+	clear:left;
+    width: 750px;
+    height: 2px;
+    background-color: darkorange;
+}
+main .right_middle {
+    height: 200px;
+    width: 700px;
+    float: right;
+}
+main .right_middle table {
+    line-height: 30px;
+    width: 750px;
+    margin-left: -50px;
+    border-top-color: tan;
+    border-bottom: 2px solid tan;
+    margin-top: 20px;
+    border-top: 2px solid tan;
+    border-collapse:collapse;
+}
+main .right_border {
+    border-right-color:white ;
+}
+main .neirong {
+    border-bottom: 1px solid silver;
+}
+main .neirong td {
+    text-align: center;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+main .title {
+    font-size: 20px;
+    color: #8A7152;
+    background-color: #F7F4EB;
+}
+main .neirong {
+    font-size: 12px;
+}
+main a{
+    text-decoration: none;
+    font-size: 12px;
+}
+main .Title{
+    width:500px ;
+}
+main .fanye{
+    float: right;
+    color: blue;
+}
+main .right .right_middle .right_border{
+    border-right: 0;
+}

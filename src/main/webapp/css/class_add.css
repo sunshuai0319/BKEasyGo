@@ -1,0 +1,53 @@
+*{
+     padding: 0px;
+     margin: 0 auto;
+     	font-size: 12px;
+ }
+
+main .right_top {
+    height: 40px;
+    width: 500px;
+    float:left;
+    margin-left:20px;
+}
+main .right_top ul {
+    list-style: none;
+}
+main .right_top li {
+    float: left;
+}
+main .right_top span{
+    font-weight: bold;
+    font-size: 12px;
+}
+main .line {
+	clear:left;
+    width: 750px;
+    height: 2px;
+    background-color: darkorange;
+}
+main .right_middle {
+    height: 50px;
+    width: 700px;
+    float: right;
+}
+main .right_middle table {
+    line-height: 30px;
+    width: 600px;
+}
+main .GG{
+    width: 400px;
+}
+main .text {
+    float: right;
+}
+main .textNR {
+    width: 400px;
+    height: 100px;
+    resize: none;
+}
+main .right_bottom img {
+    text-align: center;
+    width: 100px;
+    height: 40px;
+}

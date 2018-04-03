@@ -1,0 +1,76 @@
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+   
+    <title>易购——category_add.css</title>
+    <meta charset="utf-8">
+    <link type="text/css" href="css/category_add.css" rel="stylesheet">
+    <!--<script type="text/javascript" src="js/jquery-1.11.0.js"></script>-->
+</head>
+<body>
+<main>
+ <section class="right">
+            <section class="right_top">
+                <ul>
+                    <li><img src="images/houtai1.png"></li>
+                    <li><span>添加小分类</span></li>
+                </ul>
+            </section>
+            <div class="line"></div>
+            <section class="right_middle">
+            <form action="categorySecondAddTo" method="post">
+                <table style="width: 700px;">
+                    <tr>
+                        <td class="text">商品类别名称（*）：</td>
+                        <td><input type="text" class="GG" name="smallClass" ></td>
+                        <td id="result"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">所属大分类：</td>
+                         <td><select name="bigClass">
+                         <option value="-1">请选择</option>
+                         
+                             <option value="33">玩具</option>
+                          
+                             <option value="31">珠宝首饰</option>
+                          
+                             <option value="30">运动户外</option>
+                          
+                             <option value="29">居家生活</option>
+                          
+                             <option value="28">家居家纺</option>
+                          
+                             <option value="27">体育用品</option>
+                          
+                             <option value="26">蔬菜</option>
+                          
+                             <option value="25">服装</option>
+                          
+                             <option value="24">装饰材料</option>
+                          
+                             <option value="23">汽车用品</option>
+                          
+                             <option value="21">日用品</option>
+                          
+                             <option value="19">手机</option>
+                          
+                             <option value="18">书籍</option>
+                          
+                             <option value="17">电器</option>
+                             
+                         </select></td>
+                         <td id="result1"></td>
+                    </tr>
+                    <tr><td colspan="2" class="right_bottom"><input type="image" src="images/submit.gif"></td><td style="width: 100px;"></td></tr>
+                </table>
+               </form> 
+            </section>
+        </section>
+
+</main>
+</body>
+</html>

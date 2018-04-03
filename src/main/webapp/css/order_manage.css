@@ -1,0 +1,117 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            /*border: 1px solid red;*/
+        }
+
+        .header{
+            width: 1024px;
+            height: 150px;
+            margin-left: 170px;
+        }
+        .main{
+            width: 1024px;
+            height: 380px;
+            margin-left: 170px;
+        }
+        .main_left{
+            width: 181px;
+            height: 342px;
+            margin-left: 26px;
+            float: left;
+        }
+        .main_right{
+            width: 796px;
+            height: 342px;
+            float: left;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .main_right dl{
+            height: 24px;
+            border-bottom: 2px solid #fc883b;
+        }
+        .main_right dl dt{
+            background-image: url("../images/bg.png");
+            background-position: -236px -107px;
+            width: 13px;
+            height: 14px;
+            float: left;
+            margin-right: 6px;
+        }
+        .main_right dl dd{
+            line-height: 14px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .main_right form{
+            width: 770px;
+        }
+        .main_right form ul{
+            float: right;
+            margin-top: 20px;
+        }
+        .main_right form ul li{
+            list-style-type: none;
+            font-size: 13px;
+        }
+        .submit{
+            background-color: #5e77aa;
+            color: white;
+            width: 50px;
+            height: 19px;
+            border-top: 1px solid black;
+            margin-left: -8px;
+        }
+        table{
+            width: 750px;
+            clear: both;
+            text-align: center;
+            border-top: 2px solid #dfc9b2;
+            border-bottom: 2px solid #dfc9b2;
+            border-collapse: collapse;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        .tr1{
+            color: #8a7152;
+            font-weight: bold;
+            font-size: 13px;
+            background-color: #f7f4eb;
+            height: 24px;
+        }
+        .td1{
+            width: 110px;
+        }
+        .td2{
+            width: 80px;
+        }
+        .td3{
+            width: 377px;
+        }
+        .td4{
+            width: 80px;
+        }
+        .td5{
+            width: 80px;
+        }
+        .tr2{
+            font-size: 13px;
+            height: 32px;
+        }
+        .tr2 td{
+            border-top: 1px solid #dfc9b2;
+            border-right: 1px solid #e1e1e1;
+        }
+        #td{
+            border-right: 0;
+        }
+        .tr2 td a{
+            text-decoration: none;
+        }
+        .footer{
+            width: 1024px;
+            height: 31px;
+            margin-left: 170px;
+        }
