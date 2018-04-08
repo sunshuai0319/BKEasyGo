@@ -12,11 +12,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Manager {
 
-//    主键id
-    private int id ;
-//    管理员名
-    private String managerName ;
-//    管理员密码
-    private String managerPass ;
+    //    主键id
+    private int id;
+    //    管理员名
+    private String managerName;
+    //    管理员密码
+    private String managerPass;
 
 }
