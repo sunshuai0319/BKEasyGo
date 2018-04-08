@@ -11,9 +11,9 @@
         <setting name="useGeneratedKeys" value="true"/>
 
         <!-- 别名替换列明-->
-        <!--<setting name="useColumnLabel" value="true"/>-->
+        <setting name="useColumnLabel" value="true"/>
         <!-- 驼峰命名 -->
-        <!--<setting name="mapUnderscoreToCamelCase" value="true"/>-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
 
     </settings>
 </configuration>

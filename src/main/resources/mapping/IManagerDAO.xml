@@ -6,7 +6,7 @@
 <mapper namespace="com.lechenggu.bkeasygo.dao.IManagerDAO">
 
     <!-- 查询manager表的所有内容 -->
-    <select id="findByNameAndPass" resultType="com.lechenggu.bkeasygo.model.Manager">
+    <select id="loginByManager" resultType="int">
         SELECT * FROM manager
     </select>
 

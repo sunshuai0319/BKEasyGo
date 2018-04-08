@@ -1,8 +1,6 @@
 package com.lechenggu.bkeasygo.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 /**
  * 管理员表实体类
