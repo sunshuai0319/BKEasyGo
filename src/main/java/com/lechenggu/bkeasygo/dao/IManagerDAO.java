@@ -1,5 +1,6 @@
 package com.lechenggu.bkeasygo.dao;
 
+import com.lechenggu.bkeasygo.model.Manager;
 import org.apache.ibatis.annotations.Param;
 
 public interface IManagerDAO {
@@ -9,7 +10,9 @@ public interface IManagerDAO {
      * @param managerName 用户名
      * @param managerPass 密码
      * @return 存在返回1   否则返回0
+     * mybatis查询字段为int类型无数据会返回0报错,改为integer类型返回null
      */
-    int loginByManager(@Param("managerName") String managerName, @Param("managerPass") String managerPass);
+    Manager loginByManager(@Param("managerName") String managerName,
+                           @Param("managerPass") String managerPass);
 
 }

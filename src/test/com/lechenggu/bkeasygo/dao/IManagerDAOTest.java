@@ -1,5 +1,6 @@
 package com.lechenggu.bkeasygo.dao;
 
+import com.lechenggu.bkeasygo.model.Manager;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -7,10 +8,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
 
-import static org.junit.Assert.*;
-
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"classpath:spring_mybatis.xml"})
+@ContextConfiguration({"classpath:spring-mybatis.xml"})//配置文件地址需正确
 public class IManagerDAOTest {
 
     @Resource
@@ -19,7 +18,7 @@ public class IManagerDAOTest {
     @Test
     public void loginByManager() {
 
-        int i = iManagerDAO.loginByManager("admin", "admin");
-        System.out.println(i);
+        Manager manager = iManagerDAO.loginByManager("admin", "admin");
+        System.out.println("manager=" + manager.toString());
     }
 }

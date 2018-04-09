@@ -36,7 +36,7 @@ pageEncoding="UTF-8"%>
         <section class="bottom">
             <section class="top">欢迎登录易购•商城系统</section>
 </center>            
-            <form action="Login" method="post" name="login">
+            <form action="manager/login" method="post" name="login">
             <section class="middle">
                     <table>
                     
@@ -47,12 +47,12 @@ pageEncoding="UTF-8"%>
                     	</tr>
                         <tr>
                             <td>用户名：</td>
-                            <td><input type="text" name="userName" value="admin1" ></td>
+                            <td><input type="text" name="managerName" value="" ></td>
                         	 <td id="resuName"></td>
                         </tr>
                         <tr>
                             <td>登录密码：</td>
-                            <td><input type="password" name="pwd" value="123456" ></td>
+                            <td><input type="password" name="managerPass" value="" ></td>
                         	 <td id="resuPwd"></td>
                         </tr>
                         <tr>

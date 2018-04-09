@@ -1,6 +1,9 @@
 package com.lechenggu.bkeasygo.service;
 
 
+import com.lechenggu.bkeasygo.exception.AppException;
+import com.lechenggu.bkeasygo.model.Manager;
+
 public interface IManagerService {
 
     /**
@@ -10,5 +13,5 @@ public interface IManagerService {
      * @param managerPass 密码
      * @return 返回数据库查询结果
      */
-    int login(String managerName, String managerPass);
+    Manager login(String managerName, String managerPass) throws AppException;
 }
