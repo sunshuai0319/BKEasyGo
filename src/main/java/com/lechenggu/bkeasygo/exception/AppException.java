@@ -5,9 +5,9 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class AppException extends Exception {
+public class AppException extends RuntimeException {
 
-    private String message;
+    private String msg;
     private int code;
 
 

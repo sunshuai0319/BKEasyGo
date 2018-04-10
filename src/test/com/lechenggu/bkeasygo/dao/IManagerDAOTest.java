@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import javax.annotation.Resource;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"classpath:spring-mybatis.xml"})//配置文件地址需正确
+@ContextConfiguration({"classpath:spring/spring-mybatis.xml"})//配置文件地址需正确
 public class IManagerDAOTest {
 
     @Resource

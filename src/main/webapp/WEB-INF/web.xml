@@ -18,7 +18,7 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <!--
             配置SpringMVC 需要配置的文件
-            spring-mybatis.xml，spring-config.xml，applicationContext-web.xml
+            spring-mybatis.xml，spring-config.xml，spring-mvc.xml
             Mybites -> spring -> springMvc
         -->
         <init-param>

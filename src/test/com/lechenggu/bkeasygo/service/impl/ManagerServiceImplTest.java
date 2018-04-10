@@ -1,5 +1,6 @@
 package com.lechenggu.bkeasygo.service.impl;
 
+import com.lechenggu.bkeasygo.exception.AppException;
 import com.lechenggu.bkeasygo.model.Manager;
 import com.lechenggu.bkeasygo.service.IManagerService;
 import org.junit.Test;
@@ -11,26 +12,26 @@ import javax.annotation.Resource;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"classpath:spring-mybatis.xml", "classpath:spring-config.xml"})
+@ContextConfiguration({"classpath:spring/spring-mybatis.xml", "classpath:spring/spring-config.xml"})
 public class ManagerServiceImplTest {
 
     @Resource
-    IManagerService iManagerService;
+    private IManagerService iManagerService;
 
     @Test
-    public void login()  throws Exception{
+    public void login() {
 
-
-        Manager manager = null;
         try {
-            manager = iManagerService.login("admin","");
+            Manager manager = iManagerService.login("admin", "");
             System.out.println(manager.toString());
+        } catch (AppException app) {
+            app.printStackTrace();
+            System.out.println(app.getMsg());
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println(e.getMessage());
         }
 
-
-        }
 
     }
+
+}

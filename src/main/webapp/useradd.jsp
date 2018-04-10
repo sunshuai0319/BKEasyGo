@@ -1,12 +1,9 @@
-
-
-
-<!DOCTYPE HTML>
+<%@ page language="java" contentType="text/html; charset=UTF-8"pageEncoding="UTF-8"%>
 <html>
   <head>
     <title>易购——category_manage</title>
     <meta charset="utf-8">
-    <!--<script type="text/javascript" src="js/jquery-1.11.0.js"></script>-->
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
     <link type="text/css" href="css/user_add.css" rel="stylesheet">
 </head>
 <body>
@@ -34,12 +31,12 @@
                     </tr>
                     <tr>
                         <td class="Ntext">真实姓名（*）：</td>
-                        <td><input type="text" class="In" name="name"></td>
+                        <td><input type="text" class="In" name="realName"></td>
                         <td id="resultRealName"></td>
                     </tr>
                     <tr>
                         <td class="Ntext">登录密码（*）：</td>
-                        <td><input type="password" class="In" name="pwd"></td>
+                        <td><input type="password" class="In" name="password"></td>
                         <td id="resultPwd"></td>
                     </tr>
                     <tr>
@@ -49,18 +46,18 @@
                     </tr>
                     <tr>
                         <td class="Ntext">性别（*）：</td>
-                        <td ><input type="radio" value="男" name="sex"><img src="images/Male.gif" >
-                            <input type="radio" value="女" name="sex"><img src="images/Female.gif"></td>
+                        <td ><input type="radio" value="1" name="sex" checked="checked"><img src="images/Male.gif" >
+                            <input type="radio" value="0" name="sex"><img src="images/Female.gif"></td>
                             <td id="resultSex"></td>
                     </tr>
                     <tr>
                         <td class="Ntext">出生日期：</td>
-                        <td><input type="text" class="In" name="birthDay"></td>
+                        <td><input type="text" class="In" name="birth"></td>
                         <td id="resulBirthday"></td>
                     </tr>
                     <tr>
                         <td class="Ntext">身份证：</td>
-                        <td><input type="text" class="In" name="user_id"></td>
+                        <td><input type="text" class="In" name="cardId"></td>
                         <td id="resultUser_id"></td>
                     </tr>
                     <tr>

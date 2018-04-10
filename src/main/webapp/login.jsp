@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"pageEncoding="UTF-8"%>
 <html>
   <head>
     <title>易购——login</title>
@@ -36,13 +35,13 @@ pageEncoding="UTF-8"%>
         <section class="bottom">
             <section class="top">欢迎登录易购•商城系统</section>
 </center>            
-            <form action="manager/login" method="post" name="login">
+            <form action="login" method="post" name="login">
             <section class="middle">
                     <table>
                     
                     	<tr>
                     		<td></td>
-                            <td style="color:red"></td>
+                            <td style="color:red">${requestScope.loginerr}</td>
                         	 <td></td>
                     	</tr>
                         <tr>
@@ -55,11 +54,12 @@ pageEncoding="UTF-8"%>
                             <td><input type="password" name="managerPass" value="" ></td>
                         	 <td id="resuPwd"></td>
                         </tr>
-                        <tr>
+<!--                        <tr>
                             <td>验证码：</td>
                             <td><input type="text" id="idenfitying" name="idenfitying"></td>
                             <td><img id="kaptchaImge" src="kaptcha.jpg"><span id="resuImg"></span></td>
                         </tr>
+-->
                        <tr> <td></td> 
                        <td><input type="image" src="images/login.gif"  ></td>   <td><a href="forget_pwd.jsp">忘记密码？</a> <a href="reset_pwd.jsp">修改密码</a></td></tr>      
                     </table>
