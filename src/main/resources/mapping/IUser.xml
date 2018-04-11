@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<!-- 映射文件 -->
+<mapper namespace="com.lechenggu.bkeasygo.dao.IUserDAO">
+
+    <!-- 用户新增 -->
+    <insert id="doCreate">
+        INSERT INTO `user`
+        (NULL,#{userName},#{realName},#{password},#{sex},#{birth},#{cardId},
+        #{email},#{phone},#{address},#{Ifnot},#{creatId},NOW(),#{modifyId},NOW())
+    </insert>
+
+    <!-- 用户删除 -->
+    <delete id="doRemove">
+
+    </delete>
+
+    <!-- 用户修改 -->
+    <update id="doUpdate">
+
+    </update>
+
+    <!-- 查询全部 -->
+    <select id="findAll" resultType="Manager">
+
+    </select>
+
+    <!-- 根据ID查询 -->
+    <select id="findById" resultType="Manager">
+
+    </select>
+
+
+</mapper>
