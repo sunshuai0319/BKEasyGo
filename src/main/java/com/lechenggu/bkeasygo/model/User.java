@@ -46,4 +46,23 @@ public class User {
     //    修改时间
     private Date modifyTime;
 
+    public User(String userName, String realName, String password,
+                int sex, String birth, String cardId, String email,
+                String phone, String address, int ifnot, int creatId,
+                Date creatTime, int modifyId, Date modifyTime) {
+        this.userName = userName;
+        this.realName = realName;
+        this.password = password;
+        this.sex = sex;
+        this.birth = birth;
+        this.cardId = cardId;
+        this.email = email;
+        this.phone = phone;
+        this.address = address;
+        Ifnot = ifnot;
+        this.creatId = creatId;
+        this.creatTime = creatTime;
+        this.modifyId = modifyId;
+        this.modifyTime = modifyTime;
+    }
 }
