@@ -7,7 +7,7 @@
 
     <!-- 用户新增 -->
     <insert id="doCreate">
-        INSERT INTO `user`
+        INSERT INTO user VALUES
         (NULL,#{userName},#{realName},#{password},#{sex},#{birth},#{cardId},
         #{email},#{phone},#{address},#{Ifnot},#{creatId},NOW(),#{modifyId},NOW())
     </insert>
