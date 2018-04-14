@@ -6,7 +6,7 @@
 <mapper namespace="com.lechenggu.bkeasygo.dao.IManagerDAO">
 
     <!-- 查询manager表的所有内容 -->
-    <select id="loginByManager" resultType="Manager">
+    <select id="loginByManager" resultType="com.lechenggu.bkeasygo.model.Manager">
         <!--mybatis查询字段为int类型无数据会返回0报错,改为integer类型返回null-->
         SELECT * FROM manager where managerName = #{managerName} and managerPass = #{managerPass}
     </select>

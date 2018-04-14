@@ -1,4 +1,4 @@
-package com.lechenggu.bkeasygo.dao;
+package bkeasygo.dao;
 
 import com.lechenggu.bkeasygo.dao.IManagerDAO;
 import com.lechenggu.bkeasygo.model.Manager;
