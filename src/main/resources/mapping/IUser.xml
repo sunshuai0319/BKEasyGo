@@ -28,7 +28,7 @@
     </select>
 
     <!-- 根据ID查询 -->
-    <select id="findById" resultType="com.lechenggu.bkeasygo.model.Manager">
+    <select id="findById" resultType="com.lechenggu.bkeasygo.model.User">
 
     </select>
 

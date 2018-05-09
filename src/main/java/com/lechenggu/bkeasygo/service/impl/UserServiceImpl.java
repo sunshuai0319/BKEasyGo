@@ -28,7 +28,7 @@ public class UserServiceImpl implements IUserService {
     }
 
     public List<User> findAll() throws Exception {
-        return null;
+        return iUserDAO.findAll();
     }
 
     public User findById(int id) throws Exception {

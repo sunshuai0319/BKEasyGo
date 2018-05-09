@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 @Controller
 //使用@ModelAttribute注解直接从session中获取管理员的ID
@@ -21,6 +22,35 @@ public class UserController {
     @Autowired
     private IUserService iUserService;
 
+    /**
+     * 日期格式化    前台传入的日期格式为string,
+     * spring必须格式化后使用mybatis存入数据库对应的Date字段
+     * 否则会报错
+     *
+     * @param binder
+     */
+    @InitBinder
+    protected void initBinder(WebDataBinder binder) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
+    }
+
+    /**
+     * 用户新增
+     *
+     * @param userName 用户名
+     * @param realName 真实姓名
+     * @param password 密码
+     * @param sex      性别
+     * @param birth    生日
+     * @param cardId   身份证号码
+     * @param email    电邮
+     * @param phone    电话
+     * @param address  地址
+     * @param creatId  创建人ID
+     * @param modelMap
+     * @return 成功返回新增页面并提示 失败返回新增页面并提示
+     */
     @RequestMapping(value = "/insert", method = RequestMethod.POST)
     public String insert(@RequestParam("userName") String userName,
                          @RequestParam("realName") String realName,
@@ -50,15 +80,22 @@ public class UserController {
     }
 
     /**
-     * 日期格式化    前台传入的日期格式为string,
-     * spring必须格式化后使用mybatis存入数据库对应的Date字段
-     * 否则会报错
+     * 用户管理 分页展示
      *
-     * @param binder
+     * @param modelMap
+     * @return
      */
-    @InitBinder
-    protected void initBinder(WebDataBinder binder) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String selectAll(ModelMap modelMap) {
+        try {
+            List<User> list = iUserService.findAll();
+            modelMap.addAttribute("selectAll", list);
+        } catch (Exception e) {
+            e.printStackTrace();
+            modelMap.addAttribute("selectAllErr", "查询失败");
+        }
+        return null;// TODO: 2018/5/9
     }
+
+
 }

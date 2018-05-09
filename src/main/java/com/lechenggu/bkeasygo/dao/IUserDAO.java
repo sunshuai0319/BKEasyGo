@@ -43,7 +43,7 @@ public interface IUserDAO {
      *
      * @return 用户对象
      */
-    Manager findById(int id);
+    User findById(int id);
 
 
 }
