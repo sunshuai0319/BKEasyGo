@@ -26,7 +26,7 @@ public class User {
     //    性别
     private int sex;
     //    生日
-    private String birth;
+    private Date birth;
     //    身份证号
     private String cardId;
     //    电邮
@@ -47,7 +47,7 @@ public class User {
     private Date modifyTime;
 
     public User(String userName, String realName, String password,
-                int sex, String birth, String cardId, String email,
+                int sex, Date birth, String cardId, String email,
                 String phone, String address, int ifnot, int creatId,
                 Date creatTime, int modifyId, Date modifyTime) {
         this.userName = userName;

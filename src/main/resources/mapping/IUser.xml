@@ -23,12 +23,12 @@
     </update>
 
     <!-- 查询全部 -->
-    <select id="findAll" resultType="Manager">
-
+    <select id="findAll" resultType="com.lechenggu.bkeasygo.model.User">
+        SELECT * FROM user
     </select>
 
     <!-- 根据ID查询 -->
-    <select id="findById" resultType="Manager">
+    <select id="findById" resultType="com.lechenggu.bkeasygo.model.Manager">
 
     </select>
 

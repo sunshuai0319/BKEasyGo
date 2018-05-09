@@ -43,6 +43,8 @@ public class ManagerController {
 //            将管理员id name 存入modelmap
             modelMap.addAttribute("id", id);
             modelMap.addAttribute("name", name);
+            System.out.println("+++++++++++++++++++++++++++++++++");
+            System.out.println(id);
 
         } catch (Exception e) {
 //            e.printStackTrace();

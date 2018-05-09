@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"pageEncoding="UTF-8"%>
+<%@include file="web-inf/tag.jsp" %>
 <html>
   <head>
     <title>易购——user_manage</title>
@@ -42,51 +43,6 @@
                         <td><img src="images/jiedong.png"><a href="User_Unfreeze?id=16">解冻</a><img src="images/dongjie.png"><a href="User_Freeze?id=16">冻结</a></td>
                         <td class="right_border"><img src="images/update1.png"><a href="userModify?id=16&page=1" target="center">修改</a><img src="images/delete.png"><a href="userDelete?id=16&page=1" >删除</a></td>
                     </tr>
-                    
-                    <tr class="neirong">
-                        <td>15</td>
-                        <td>ay290307585</td>
-                        <td>马六</td>
-                        <td>男</td>
-                        <td>zz_z11gcg@163.com</td>
-                        <td>13111111111</td>
-                        <td><img src="images/jiedong.png"><a href="User_Unfreeze?id=15">解冻</a><img src="images/dongjie.png"><a href="User_Freeze?id=15">冻结</a></td>
-                        <td class="right_border"><img src="images/update1.png"><a href="userModify?id=15&page=1" target="center">修改</a><img src="images/delete.png"><a href="userDelete?id=15&page=1" >删除</a></td>
-                    </tr>
-                    
-                    <tr class="neirong">
-                        <td>14</td>
-                        <td>admin007</td>
-                        <td>张三</td>
-                        <td>女</td>
-                        <td>zz_zgc1g@163.com</td>
-                        <td>13111111111</td>
-                        <td><img src="images/jiedong.png"><a href="User_Unfreeze?id=14">解冻</a><img src="images/dongjie.png"><a href="User_Freeze?id=14">冻结</a></td>
-                        <td class="right_border"><img src="images/update1.png"><a href="userModify?id=14&page=1" target="center">修改</a><img src="images/delete.png"><a href="userDelete?id=14&page=1" >删除</a></td>
-                    </tr>
-                    
-                    <tr class="neirong">
-                        <td>13</td>
-                        <td>zhangsan1</td>
-                        <td>王五1</td>
-                        <td>男</td>
-                        <td>zz3_zgcg@163.com</td>
-                        <td>13111111111</td>
-                        <td><img src="images/jiedong.png"><a href="User_Unfreeze?id=13">解冻</a><img src="images/dongjie.png"><a href="User_Freeze?id=13">冻结</a></td>
-                        <td class="right_border"><img src="images/update1.png"><a href="userModify?id=13&page=1" target="center">修改</a><img src="images/delete.png"><a href="userDelete?id=13&page=1" >删除</a></td>
-                    </tr>
-                    
-                    <tr class="neirong">
-                        <td>12</td>
-                        <td>liuyanjun1</td>
-                        <td>张三</td>
-                        <td>男</td>
-                        <td>zz2_zgcg@163.com</td>
-                        <td>13111111111</td>
-                        <td><img src="images/jiedong.png"><a href="User_Unfreeze?id=12">解冻</a><img src="images/dongjie.png"><a href="User_Freeze?id=12">冻结</a></td>
-                        <td class="right_border"><img src="images/update1.png"><a href="userModify?id=12&page=1" target="center">修改</a><img src="images/delete.png"><a href="userDelete?id=12&page=1" >删除</a></td>
-                    </tr>
-                    
                 </table>
                 
                 <div class="fanye">[1 / 2]<a href="userList?page=1">首页</a>&nbsp;

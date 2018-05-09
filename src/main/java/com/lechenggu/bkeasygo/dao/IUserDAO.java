@@ -1,6 +1,7 @@
 package com.lechenggu.bkeasygo.dao;
 
 import com.lechenggu.bkeasygo.model.Manager;
+import com.lechenggu.bkeasygo.model.User;
 
 import java.util.List;
 
@@ -9,33 +10,33 @@ public interface IUserDAO {
     /**
      * 用户新增
      *
-     * @param manager 用户对象 数据补齐后
+     * @param user  用户对象 数据补齐后
      * @return 成功返回1   否则返回0
      */
-    Integer doCreate(Manager manager);
+    Integer doCreate(User user);
 
     /**
      * 用户删除
      *
-     * @param manager 用户对象
+     * @param user 用户对象
      * @return 成功返回1   否则返回0
      */
-    Integer doRemove(Manager manager);
+    Integer doRemove(User user);
 
     /**
      * 用户修改
      *
-     * @param manager 用户对象
+     * @param user 用户对象
      * @return 成功返回1   否则返回0
      */
-    Integer doUpdate(Manager manager);
+    Integer doUpdate(User user);
 
     /**
      * 查询全部
      *
      * @return 用户对象list集合
      */
-    List<Manager> findAll();
+    List<User> findAll();
 
     /**
      * 根据id查询

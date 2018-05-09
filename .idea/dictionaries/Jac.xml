@@ -2,17 +2,29 @@
   <dictionary name="Jac">
     <words>
       <w>bkeasygo</w>
+      <w>colspan</w>
       <w>configurer</w>
       <w>connetion</w>
       <w>datasource</w>
+      <w>dongjie</w>
+      <w>fanye</w>
+      <w>houtai</w>
       <w>jdbc</w>
+      <w>jiedong</w>
       <w>jstl</w>
       <w>lechenggu</w>
+      <w>liuyanjun</w>
       <w>mchange</w>
+      <w>modelmap</w>
+      <w>neirong</w>
+      <w>ntext</w>
+      <w>repwd</w>
+      <w>resul</w>
       <w>shoppingmall</w>
       <w>springframework</w>
       <w>springmvc</w>
       <w>trantransaction</w>
+      <w>useradd</w>
     </words>
   </dictionary>
 </component>

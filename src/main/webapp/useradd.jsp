@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
   <head>
     <title>易购——category_manage</title>
@@ -17,11 +17,11 @@
             </section>
             <div class="line"></div>
             <section class="right_middle">
-            <form action="userAdd" method="post">
+            <form action="/insert" method="post">
                 <table>
                   <tr>
                         <td class="Ntext"></td>
-                        <td style="color:red"></td>
+                        <td style="color:red">${insertOk}${insertErr}</td>
                         <td></td>
                     </tr>
                     <tr>
@@ -52,7 +52,7 @@
                     </tr>
                     <tr>
                         <td class="Ntext">出生日期：</td>
-                        <td><input type="text" class="In" name="birth"></td>
+                        <td><input type="date" class="In" name="birth"></td>
                         <td id="resulBirthday"></td>
                     </tr>
                     <tr>
